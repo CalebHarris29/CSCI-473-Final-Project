@@ -67,13 +67,16 @@ logs/
 mimic-iv-3.1
 mimic-iv-3.1.zip
 *.csv.gz
+*.csv
 
+output/*.csv
 # -----------------------------
 # Secrets and env
 # -----------------------------
 .env
 .env.*
 secrets.json
+
 
 # Lock files (node/yarn lock are usually tracked; keep here if you prefer to ignore)
 *.lock

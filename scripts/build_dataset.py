@@ -122,3 +122,11 @@ merged_df = pd.get_dummies(
 print(merged_df.columns)
 print(merged_df.head())
 merged_df.isna().sum()
+
+import os
+os.makedirs("output", exist_ok=True)
+
+output_path = "output/cleaned_dataset.csv"
+merged_df.to_csv(output_path, index=False)
+
+print(f"\nSaved cleaned dataset to: {output_path}")
